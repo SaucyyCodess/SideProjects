@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P17166100</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+<!-- Header contents -->
+  <header>
+    <h1 class="large"><b>Smooth Anime</b></h1>
+    <h6> Welcome to the world of <span class="tag">Anime</span></h6>
+    <input type="search" id="mySearchID" placeholder="Anime Search" aria-label="search">
+    <button type="submit"> <i class="fas fa-search"></i></button>
+  <section data-name="form">
+    <div class="loginrow">
+      <div class="logcol">
+        <form id="login">
+			    <h2>Login</h2>
+			    <label for="myUser">Username: </label>
+			    <input id="myUser" name="username" placeholder="enter your username" required> <br>
+			    <label for="myPassword">Password: </label>
+			    <input id="myPassword" type="password" name="password" placeholder="enter your password" minlength="8" required>
+					<input type="submit" value="Login">
+			  </form>
+      </div>
+      <div class="logcol">
+        <form id="register">
+          <h2>Register</h2>
+          <p>Please fill in the following to create an account.</p>
+          <label for="newUser">Username: </label>
+          <input id="newUser" name="new username" placeholder="Enter your desired username" required> <br>
+          <label for="newPassword">Password: </label>
+          <input id="newPassword" type="password" name="new password" placeholder="Enter your password" minlength="8" required> <br>
+          <label for="newConfirmation">Confirm password: </label>
+          <input id="newConfirmation" type="password" placeholder="Confirm password" required>
+          <input type="submit" value="Register">
+        </form>
+    </div>
+  </div>
+  </section>
+  <img class="run" src="images/running1.gif" alt="Running Man">
+  <nav id="sideNav" class="menu">
+    <a href="index.html" id="home">Home</a>
+    <a href="animes.html" id="animes">Animes</a>
+    <a href="watchList.html" id="watchList">WatchList</a>
+    <a href="about.html" id="about">About</a>
+  </nav>
+</header>
+<main>
+
+<!-- To hold my image gallery-->
+  <section class="box">
+  <h2> Recommended </h2>
+
+<!-- Images with num text -->
+  <div class="animeSlides">
+    <div class="numtxt"> 1 / 6 </div>
+      <img src="images/attack-on-titan.jpeg"  id="aotImage" alt="Attack on Titan">
+  </div>
+
+  <div class="animeSlides">
+    <div class="numtxt"> 2 / 6 </div>
+      <img src="images/Black-Clover.jpeg" id="bcImage" alt="Black Clover">
+  </div>
+
+  <div class="animeSlides">
+    <div class="numtxt"> 3 / 6 </div>
+      <img src="images/boruto.jpeg" id="bImage" alt="Boruto">
+  </div>
+
+  <div class="animeSlides">
+    <div class="numtxt"> 4 / 6 </div>
+      <img src="images/Jujutsu-Kaisen.jpeg" id="jkImage" alt="Jujustu Kaisen">
+  </div>
+
+  <div class="animeSlides">
+    <div class="numtxt"> 5 / 6 </div>
+      <img src="images/my-hero-academia.jpeg" id="mhaImage" alt="My hero Academia">
+  </div>
+
+  <div class="animeSlides">
+    <div class="numtxt"> 6 / 6 </div>
+      <img src="images/One-piece.jpeg" id="opImage" alt="One Piece">
+  </div>
+
+<!-- Next and Previous Bttns -->
+  <a class="prev"
+onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next"
+onclick="plusSlides(1)">&#10095;</a>
+
+<!-- Image Captions -->
+  <section class="description-box">
+    <p id="description"> </p>
+</section>
+
+<!-- Thumbnail Images-->
+  <div class="row">
+    <div class="column">
+      <img class="op cursor" id="aotimg"
+      src="images/attack-on-titan.jpeg"  onclick="currentSlide(1)" alt="Attack Of Titan <br> Known in Japan as Shingeki no Kyojin, many years ago, the last remnants of humanity were forced to retreat behind the towering walls of a fortified city to escape the massive, man-eating Titans that roamed the land outside their fortress. Only the heroic members of the Scouting Legion dared to stray beyond the safety of the walls – but even those brave warriors seldom returned alive. Those within the city clung to the illusion of a peaceful existence until the day that dream was shattered, and their slim chance at survival was reduced to one horrifying choice: kill – or be devoured! ">
+  </div>
+  <div class="column">
+    <img class="op cursor" id="bcimg"
+      src="images/Black-Clover.jpeg"  onclick="currentSlide(2)" alt="Black Clover <br> In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option! ">
+  </div>
+  <div class="column">
+    <img class="op cursor" id="bimg"
+      src="images/boruto.jpeg"  onclick="currentSlide(3)" alt="Boruto <br> The life of the shinobi is beginning to change. Boruto Uzumaki, son of Seventh Hokage Naruto Uzumaki, has enrolled in the Ninja Academy to learn the ways of the ninja. Now, as a series of mysterious events unfolds, Boruto’s story is about to begin!">
+  </div>
+  <div class="column">
+    <img class="op cursor" id="jkimg"
+      src="images/Jujutsu-Kaisen.jpeg"  onclick="currentSlide(4)" alt="Jujutsu Kaisen <br> Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.">
+  </div>
+  <div class="column">
+    <img class="op cursor" id="mhaimg"
+      src="images/my-hero-academia.jpeg"  onclick="currentSlide(5)" alt=" My Hero Academia <br> Izuku has dreamt of being a hero all his life—a lofty goal for anyone, but especially challenging for a kid with no superpowers. That’s right, in a world where eighty percent of the population has some kind of super-powered “quirk,” Izuku was unlucky enough to be born completely normal. But that’s not enough to stop him from enrolling in one of the world’s most prestigious hero academies.">
+    </div>
+  <div class="column">
+    <img class="op cursor" id="opimg"
+      src="images/One-piece.jpeg"  onclick="currentSlide(6)" alt="One Piece <br> Monkey. D. Luffy refuses to let anyone or anything stand in the way of his quest to become the king of all pirates. With a course charted for the treacherous waters of the Grand Line and beyond, this is one captain who'll never give up until he's claimed the greatest treasure on Earth: the Legendary One Piece!">
+  </div>
+</div>
+</section>
+
+<section class="blog">
+  <h2> Reviews </h2>
+<div class="blogrow">
+  <div class="leftcolumn">
+    <div class="cardblog" id="leftblog">
+      <h3>Demon Slayer: Kimetsu No Yaiba</h3>
+      <h5> A family is attacked by demons and only two memebers survived. The protagonist (Tanjiro) and his sister (Nezuko), who is slowly transforming into a demon. Tanjiro has decided to step out to become a demon slayer to avenge his family and cure his sister. <b> Release Date:</b> 6 Apr, 2019</h5>
+      <img class="decoyimg" src="images/demon-slayer.jpeg" alt="Demon Slayer">
+      <p> Tanjiro and his group go through the usual hurdles of training and battles as they learn and refine powerful abilities. Demon Slayer doesn’t cram too much into its first season and the majority of these episodes get a chance to breathe where the characters can properly express themselves and not be rushing from one battle to the next. </p>
+    </div>
+  </div>
+
+<div class="rightcolumn">
+  <div class="cardblog">
+    <h3>Dragon Ball Super</h3>
+    <h5> A mere six months after the defeat of Majin Buu, The honourable Super Saiyan Son Goku decides to continue his quest to becoming stronger. <b>Release Date:</b> 7 Jan, 2017 </h5>
+    <img class="decoyimg" src="images/dragon-ball-super.jpeg" alt="Dragon Ball">
+    <p> Dragon Ball Super is the continuation and sequel of Dragon Ball Z. The story is quite similar to Z as we see our hero Goku progressively meeting stronger foes and the stakes becoming higher. New elements and characters are introduced such as the Gods. Something that Super has incorporated in this show that sets it apart from Z is character development. The series is also able to incorporate effective drama and genuinely hilarious comedy into its story, the most noteworthy being the action and pure fighting that is reminiscent of Dragon Ball Z. </p>
+  </div>
+</div>
+</div>
+</section>
+<div class="modal">
+</div>
+</main>
+</body>
+  <script src="https://kit.fontawesome.com/99fb53178b.js" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
